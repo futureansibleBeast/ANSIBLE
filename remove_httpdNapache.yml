@@ -7,24 +7,24 @@
   - name: install apache2 package
     apt:
       name: apache2
-      state: latest 
+      state: absent 
     when: ansible_distribution == "Pop!_OS"
 
   - name: add php support for apache2
     apt:
       name: libapache2-mod-php
-      state: latest 
+      state: absent 
     when: ansible_distribution == "Pop!_OS"  
 
   - name: install httpd (apache) package
     dnf:
       name: httpd
-      state: latest
+      state: absent
     when: ansible_distribution == "Rocky"
 
   - name: add php support for httpd
     dnf:
       name: php
-      state: latest
+      state: absent
     when: ansible_distribution == "Rocky"
 
