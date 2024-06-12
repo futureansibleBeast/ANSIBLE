@@ -1,0 +1,10 @@
+[rocky]
+
+rocky01 apache_package=httpd php_package=php
+rocky02 apache_package=httpd php_package=php
+rocky03 apache_package=httpd php_package=php
+
+
+[ubuntu]
+
+pop-os apache_package=apache2 php_package=libapache2-mod-php

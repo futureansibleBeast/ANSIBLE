@@ -1,0 +1,12 @@
+[dbservers]
+
+rocky01
+rocky02 
+
+[fileserver]
+rocky03
+
+
+[popserver]
+
+pop-os
